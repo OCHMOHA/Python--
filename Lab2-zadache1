@@ -3,7 +3,7 @@
 # лаб 2
 # python
 # задача 1
-import ( math)
+import math
 
 def has_real_roots(a, b, c):
     discriminant = b**2 - 4 * a * c
