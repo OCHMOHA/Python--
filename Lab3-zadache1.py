@@ -1,3 +1,11 @@
+#оушен
+#нбибд-01-24
+#лаб 3 билет 11
+# python
+#задача 1
+
+
+
 import math
 
 def zodiac_year(year):
