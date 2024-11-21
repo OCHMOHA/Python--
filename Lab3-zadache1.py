@@ -18,5 +18,5 @@ def zodiac_year(year):
 
     return f"The year {year} is the year of the {color} {animal}."
 
-year = int(input("Enter the year: "))
+year = int(input())
 print(zodiac_year(year))
