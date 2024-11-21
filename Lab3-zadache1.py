@@ -6,23 +6,17 @@
 import math
 
 def zodiac_year(year):
+    if year < 1984:
+        raise ValueError("Year must be 1984 or later.")
 
-    color = ["Green","Red","Yellow","White","Black"]
-    
-    animal = ["Rat","Cow","Tiger","Hare","Dragon","Snake","Horse","Sheep","Monkey","Chicken","Dog","Pig"]
-    
-    try:
-    
-        year = int(year)
-        
-        if year < 0:
-            
-            return "Invalid year"
-            
-        color = color [color_index]
-        
-        animal = animal[animal_index]
-        
-        animal_index = (year - 4) % 12
-        
-        color_index = (year - 4) % 10 % 2
+    diff = year - 1984
+    animals = ["Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"]
+    colors = ["Green", "Red"]
+
+    animal = animals[diff % 12]
+    color = colors[diff % 2]
+
+    return f"The year {year} is the year of the {color} {animal}."
+
+year = int(input("Enter the year: "))
+print(zodiac_year(year))
