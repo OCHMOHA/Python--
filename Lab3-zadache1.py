@@ -7,7 +7,7 @@ import math
 
 def zodiac_year(year):
     if year < 1984:
-        raise ValueError("Year must be 1984 or later.")
+        return "invalid year"
 
     diff = year - 1984
     animals = ["Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"]
