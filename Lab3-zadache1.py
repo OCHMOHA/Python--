@@ -4,8 +4,6 @@
 # python
 #задача 1
 
-
-
 import math
 
 def zodiac_year(year):
