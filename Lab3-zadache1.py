@@ -10,7 +10,7 @@ def zodiac_year(year):
         return "invalid year"
 
     diff = year - 1984
-    animals = ["Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"]
+    animals = ["Rat", "Cow", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"]
     colors = ["Green", "Red"]
 
     animal = animals[diff % 12]
